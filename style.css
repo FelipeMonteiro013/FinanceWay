@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilo referente a index.html */
+
+.body-gradient {
+    background-image: linear-gradient(to top, rgb(243, 177, 91), rgb(237, 216, 205), rgb(74, 182, 192));
+}
+
+.container {
+    height: 100vh;
+}
+
+a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #4AB6C0;
+    color: white;
+    width: 120px;
+}
+
+label {
+    color: #2F3435;
+}
+
+/* Estilo referente a dashboard.html */
+
+.default-body {
+    background-color: #F5F5F5;
+}
+
+.history-positive-price {
+    color: green;
+}
+
+.history-negarive-price {
+    color: red;
+}
+
+nav {
+    background-color: rgba(74, 182, 192, 1);
+}
+
+.add-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgba(74, 182, 192, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+footer {
+    height: 5vh;
+}
+
+.a-buttom {
+    text-decoration: underline;
+}
+
+.menu-link{
+    color: white;
+}

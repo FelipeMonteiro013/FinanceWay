@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Adicionar</title>
+</head>
+
+<body class="default-body">
+    <nav class="navbar navbar-dark">
+        <a href="dashboard.html" class="navbar-brand">
+            <img src="./assets/FinanceWay.svg" width="160px" alt="">
+        </a>
+        <div class="row d-flex align-items-center">
+            <a href="./financial_movement.html" class="a-buttom menu-link mr-4 d-none d-md-block">Adicionar Entrada</a>
+            <a href="./financial_movement.html" class="a-buttom menu-link mr-4 d-none d-md-block">Adicionar Saída</a>
+            <button type="button" class="btn btn-outline-light mr-4" onclick="Logout()">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13" />
+                </svg>
+                Logout
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row d-flex justify-content-around mt-4">
+            <div class="col-lg-8">
+                <form action="./dashboard.html">
+                    <div class="form-group">
+                        <label for="amount">Valor</label>
+                        <input required type="number" class="form-control" id="amount" placeholder="Digite o valor">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição</label>
+                        <textarea class="form-control" name="description" id="description" cols="30"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Data</label>
+                        <input required type="date" class="form-control" id="date" placeholder="Digite o valor">
+                    </div>
+                    <div class="form-group">
+                        <label for="situation">Descrição</label>
+                        <select class="form-control" id="situation">
+                            <option>Efetivada</option>
+                            <option>Pendente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Categoria</label>
+                        <select class="form-control" id="category">
+                            <option>Alimentação</option>
+                            <option>Carro</option>
+                            <option>Educação</option>
+                            <option>Família</option>
+                            <option>Lazer</option>
+                            <option>Saúde</option>
+                        </select>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <button type="submit" class="btn">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="scripts/logout.js"></script>
+</body>
+
+</html>
